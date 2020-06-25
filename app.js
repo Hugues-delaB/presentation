@@ -20,3 +20,4 @@ const bluePill = document.querySelector('.blue-pill');
 });
 
 switchOff();
+
