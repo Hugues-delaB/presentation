@@ -1,0 +1,68 @@
+.section3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+}
+
+.header{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.morpheus{
+  display: flex;
+  justify-content: center;
+  height: 90%;
+  width: 100%;
+}
+
+.morpheus img{
+  object-fit: fit;
+}
+
+.buttons{
+  position: absolute;
+  display: flex;
+  width: 640px;
+  top: 82%;
+}
+
+.blue-pill, .red-pill{
+  height: 60px;
+  width: 50px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.blue-pill{
+  position: absolute;
+  right: 0;
+}
+
+.section3 .mooving{
+  opacity: 0;
+  transition: all, 20, ease;
+}
+
+.section3 .mooving .fade{
+  opacity: 1;
+}
+
+@keyframes goIn{
+  from{
+    opacity: 0;
+    z-index: -2;
+  }
+  to{
+    opacity: 1;
+    z-index: 2
+    }
+}
+

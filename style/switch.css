@@ -1,0 +1,25 @@
+.disable {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes turn-off {
+  0%{
+    height:100%;
+    width: 100%
+    opacity: 1;
+  }
+  97%{
+    height:2px;
+    width: 95%;
+    opacity: 1;
+  }
+  99%{
+    height:1px;
+    width: 1px;
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

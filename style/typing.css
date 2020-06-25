@@ -1,0 +1,51 @@
+.display-typing{
+  font-size: 10px;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.section2{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.typing{
+  position: relative;
+  margin-left: 2px;
+  font-size: 20px;
+}
+
+.typing::after{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 27%;
+  border-right: 10px solid white;
+  transform: translateY(13px);
+  animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes up{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}

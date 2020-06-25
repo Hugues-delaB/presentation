@@ -1,0 +1,107 @@
+.intro{
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.header-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-intro h1, h3{
+  color: #f4f4f4;
+  margin: 10px;
+}
+
+.form {
+  width: 50%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+
+p {
+  color: #f4f4f4;
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  color: #595f6e;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background-color: #11ffee00;
+}
+
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.form label::after {
+  content:"";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width:100%;
+  border-bottom: 3px solid blue;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: light-blue;
+}
+
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+.fake {
+  box-shadow: 3px 4px 0px 0px #899599;
+  background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+  background-color:#ededed;
+  border-radius:15px;
+  border:1px solid #d6bcd6;
+  display:inline-block;
+  cursor:pointer;
+  color:#3a8a9e;
+  font-family:Arial;
+  font-size:17px;
+  padding:7px 25px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #e1e2ed;
+}
+.fake:hover {
+  background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+  background-color:#bab1ba;
+}
+.fake:active {
+  position:relative;
+  top:1px;
+}
