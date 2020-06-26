@@ -6,10 +6,10 @@ const button = document.querySelector('.submit');
 const redPill = document.querySelector('.red-pill');
 const bluePill = document.querySelector('.blue-pill');
 
-  button.addEventListener('click', function(){
+  button.addEventListener('focus', function(){
   const name = document.querySelector('input').value;
   init(name);
-});
+}, true);
 
   bluePill.addEventListener('click', function(){
     window.location.href='https://www.google.com/search?q=Hello+Mr+Anderson&oq=Hello+Mr+Anderson&aqs=chrome..69i57j0l7.8398j0j8&sourceid=chrome&ie=UTF-8';
