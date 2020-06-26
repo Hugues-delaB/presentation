@@ -1,5 +1,5 @@
-import { init } from '/javascript/typing.js';
-import { switchOff } from '/javascript/switchOff.js';
+import { init } from './javascript/typing.js';
+import { switchOff } from './javascript/switchOff.js';
 // import { onTick } from '/javascript/pills.js';
 
 const button = document.querySelector('.submit');

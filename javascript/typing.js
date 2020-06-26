@@ -34,12 +34,13 @@ const typeWriter = function(txtElement, words, wait = 3000) {
     if (this.isDeleting) {
       typeSpeed /=2;
     }
-    // if word is complete
+    //check count for transition
     if (this.count === 2){
       section2.style.animation = 'up 1s ease forwards';
       section3.style.animation = 'goIn 1s ease forwards';
     }
 
+    // if word is complete
       if(!this.isDeleting && this.txt === fullTxt) {
         //make pause at the end
           typeSpeed = this.wait;
